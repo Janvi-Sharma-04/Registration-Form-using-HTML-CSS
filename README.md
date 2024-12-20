@@ -10,8 +10,8 @@ This is a simple and responsive registration form created using HTML and CSS. Th
 
 ## Preview
 
-![Registration Form Preview](preview-image.png)
-*Add a screenshot of your registration form here.*
+![image](https://github.com/user-attachments/assets/5c6877aa-e7bf-45a0-95eb-1aedee090aeb)
+
 
 ## How to Use
 
