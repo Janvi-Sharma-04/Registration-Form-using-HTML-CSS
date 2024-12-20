@@ -33,31 +33,138 @@ This is a simple and responsive registration form created using HTML and CSS. Th
 
 ### HTML Example
 ```html
-<form>
-  <label for="name">Name:</label>
-  <input type="text" id="name" name="name" required>
-
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email" required>
-
-  <button type="submit">Register</button>
-</form>
+<form action="#">
+            <h2>Registration form</h2>
+            <table>
+                <tr>
+                    <td>First Name</td>
+                    <td><input type="text" placeholder="Enter First Name"></td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td><input type="text" placeholder="Enter Last Name"></td>
+                </tr>
+                <tr>
+                    <td>Username</td>
+                    <td><input type="text" placeholder="Enter Username"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" placeholder="Enter Email"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" placeholder="Enter Password"></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="gender" value="male"> Male
+                        <input type="radio" name="gender" value="female"> Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hobby</td>
+                    <td>
+                        <input type="checkbox" name="hobby" value="reading"> Reading
+                        <input type="checkbox" name="hobby" value="writing"> Writing
+                        <input type="checkbox" name="hobby" value="singing"> Singing
+                    </td>
+                </tr>
+                <tr>
+                    <td>City</td>
+                    <td><input type="text" placeholder="Enter City"></td>
+                </tr>
+                <tr>
+                    <td>Country</td>
+                    <td><input type="text" placeholder="Enter Country"></td>
+                </tr>
+                <tr>
+                    <td>Select Car</td>
+                    <td>
+                        <select>
+                            <option value="select car">Select Car</option>
+                            <option value="audi">audi</option>
+                            <option value="swift">Swift</option>
+                            <option value="volvo">volvo</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Comment</td>
+                    <td><textarea rows="3" placeholder="The cat was playing in the garden."></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="buttons">
+                        <button type="submit">Save</button>
+                        <button type="reset">Reset</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
 ```
 
 ### CSS Example
 ```css
-form {
-  max-width: 400px;
-  margin: auto;
-  padding: 20px;
-  background-color: #f4f4f4;
-  border-radius: 5px;
+.form {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-input {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+td {
+    padding: 10px;
+    font-size: 14px;
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea, select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, textarea:focus, select:focus {
+    border-color: #007bff;
+}
+
+textarea {
+    resize: none;
+}
+
+.buttons {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 20px;
+    border: none;
+    background-color: #ddc136;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button[type="reset"] {
+    background-color: #40a8ce;
+}
+
+button:hover {
+    opacity: 0.8;
 }
 ```
 Thank you for visiting! 😊
