@@ -17,7 +17,7 @@ This is a simple and responsive registration form created using HTML and CSS. Th
 
 1. Clone or download the repository.
    ```bash
-   git clone https://github.com/your-username/registration-form.git
+   git clone https://github.com/Janvi-Sharma-04/Registration-form-using-HTML-CSS.git
    ```
 
 2. Open the `index.html` file in any modern web browser.
