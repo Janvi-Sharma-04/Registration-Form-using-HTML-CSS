@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Registration form using HTML & CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="form">
+        <form action="#">
+            <h2>Registration form</h2>
+            <table>
+                <tr>
+                    <td>First Name</td>
+                    <td><input type="text" placeholder="Enter First Name"></td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td><input type="text" placeholder="Enter Last Name"></td>
+                </tr>
+                <tr>
+                    <td>Username</td>
+                    <td><input type="text" placeholder="Enter Username"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" placeholder="Enter Email"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" placeholder="Enter Password"></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="gender" value="male"> Male
+                        <input type="radio" name="gender" value="female"> Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hobby</td>
+                    <td>
+                        <input type="checkbox" name="hobby" value="reading"> Reading
+                        <input type="checkbox" name="hobby" value="writing"> Writing
+                        <input type="checkbox" name="hobby" value="singing"> Singing
+                    </td>
+                </tr>
+                <tr>
+                    <td>City</td>
+                    <td><input type="text" placeholder="Enter City"></td>
+                </tr>
+                <tr>
+                    <td>Country</td>
+                    <td><input type="text" placeholder="Enter Country"></td>
+                </tr>
+                <tr>
+                    <td>Select Car</td>
+                    <td>
+                        <select>
+                            <option value="select car">Select Car</option>
+                            <option value="audi">audi</option>
+                            <option value="swift">Swift</option>
+                            <option value="volvo">volvo</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Comment</td>
+                    <td><textarea rows="3" placeholder="The cat was playing in the garden."></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="buttons">
+                        <button type="submit">Save</button>
+                        <button type="reset">Reset</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+</body>
+</html>
